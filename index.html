@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishwar Anpat | Portfolio</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Particles & Custom Cursor -->
+    <canvas id="particleCanvas"></canvas>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">IDZz</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-btn">🌙</button>
+    </nav>
+
+    <!-- Hero Section with Animated Sun/Moon & Mountains -->
+    <header class="hero">
+        <div class="sky">
+            <div class="sun"></div>
+            <div class="moon"></div>
+            <svg class="mountains" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="var(--bg-color)" d="M0,224L120,202.7C240,181,480,139,720,144C960,149,1200,203,1320,229.3L1440,256L1440,320L0,320Z"></path>
+            </svg>
+        </div>
+
+        <div class="hero-content" data-aos="zoom-in">
+            <p class="subtitle">Transforming ideas into intelligent systems</p>
+            <h1>Ishwar Anpat</h1>
+            <h2 id="typing-text"></h2>
+            <p class="tagline">AI-Driven Developer | Building Tomorrow’s Technology</p>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" class="icon-circle github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="icon-circle linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://leetcode.com/yourusername/" target="_blank" class="icon-circle leetcode">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-container">
+        <div class="about-content">
+            <div class="about-image-wrapper" data-aos="fade-right">
+                <div class="blob-shape">
+                    <img src="C:\Users\Ishwar\OneDrive\Pictures\your-photo.png" alt="Ishwar Anpat">
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h2 class="about-name">Ishwar Anpat <span class="wave">👋</span></h2>
+                <h3 class="about-role">Software and AI Developer</h3>
+                <p class="about-description">
+                    I'm a passionate Bsc.CS student specializing in Software Development and Artificial Intelligence. 
+                    I focus on designing data-driven, efficient, and scalable applications that merge innovation with real-world use.
+                </p>
+                <div class="about-buttons">
+                    <a href="#" class="btn-resume"><i class="fas fa-download"></i> Resume</a>
+                    <a href="#contact" class="btn-touch">Get in Touch →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" data-aos="fade-up">
+        <h2 class="section-title" data-aos="fade-down" data-aos-duration="1000">Featured Projects</h2>
+        <p class="section-subtitle" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="200">
+            A showcase of my recent work, featuring applications built with modern technologies.
+        </p>
+
+        <div class="projects-grid">
+            <!-- Project Template -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                <div class="project-glow"></div>
+                <img src="C:\portfolio\project1.png" alt="Project 1" class="project-image" data-aos="slide-up-bounce" data-aos-duration="1000">
+                <div class="project-content">
+                    <h3>Smart AI Chatbot</h3>
+                    <p>An AI-powered chatbot that interacts naturally, answers queries, and integrates seamlessly across platforms.</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fas fa-robot" title="AI"></i>
+                    </div>
+                    <a href="https://yourproject1link.com" target="_blank" class="btn-project">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Duplicate for Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                <div class="project-glow"></div>
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A fully responsive and animated portfolio showcasing projects, skills, and resume with modern UI/UX.</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <a href="https://yourproject2link.com" target="_blank" class="btn-project">View Project →</a>
+                </div>
+            </div>
+
+            <!-- Duplicate for Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+                <div class="project-glow"></div>
+                <img src="project3.jpg" alt="Project 3" class="project-image">
+                <div class="project-content">
+                    <h3>Weather App</h3>
+                    <p>An interactive weather app fetching live data from APIs and displaying forecasts with dynamic UI.</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <a href="https://yourproject3link.com" target="_blank" class="btn-project">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section id="skills" data-aos="fade-up">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-subtitle">Here are some of the key technologies I work with</p>
+
+    <div class="skills-grid">
+        <div class="skill-card" data-skill="C" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-cuttlefish"></i><span>C</span></div>
+        <div class="skill-card" data-skill="C++" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-code"></i><span>C++</span></div>
+        <div class="skill-card" data-skill="Java" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-java"></i><span>Java</span></div>
+        <div class="skill-card" data-skill="C#" data-aos="fade-up" data-aos-delay="400"><i class="fas fa-cube"></i><span>C#</span></div>
+
+        <div class="skill-card" data-skill="DSA" data-aos="fade-up" data-aos-delay="500"><i class="fas fa-network-wired"></i><span>DSA</span></div>
+        <div class="skill-card" data-skill="Git" data-aos="fade-up" data-aos-delay="600"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="skill-card" data-skill="GitHub" data-aos="fade-up" data-aos-delay="700"><i class="fab fa-github"></i><span>GitHub</span></div>
+        <div class="skill-card" data-skill="VS Code" data-aos="fade-up" data-aos-delay="800"><i class="fas fa-laptop-code"></i><span>VS Code</span></div>
+    </div>
+</section>
+
+
+
+    <!-- Education Section -->
+    <section id="education" data-aos="fade-up">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-container">
+            <div class="timeline-item left">
+                <div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
+                <div class="timeline-content">
+                    <span class="edu-year">2024 - 2027</span>
+                    <h3>Bachelor of Technology</h3>
+                    <p>Rajarshi Shahu Mahavidyalay, Latur (Autonomous)</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-badge"><i class="fas fa-school"></i></div>
+                <div class="timeline-content">
+                    <span class="edu-year">2022 - 2024</span>
+                    <h3>Senior Secondary</h3>
+                    <p>Ramkrishna Paramhansa Mahavidyalaya, Dharashiv</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Button -->
+    <button id="scrollTop" class="scroll-btn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- JS Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+<!-- Contact / Get in Touch Section -->
+<section id="contact" data-aos="fade-up">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
+
+    <div class="contact-grid">
+        <!-- Email -->
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>pandeyaanjaneya76@gmail.com</p>
+            <a href="mailto:ishwaranpat261@gmail.com" class="btn-contact">Send Email →</a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fab fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p>Connect with me</p>
+            <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="btn-contact">Visit Profile →</a>
+        </div>
+
+        <!-- GitHub -->
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>View my projects</p>
+            <a href="https://github.com/yourusername" target="_blank" class="btn-contact">Explore →</a>
+        </div>
+
+        <!-- Start a Conversation -->
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-comment-dots"></i>
+            <h3>Start a Conversation</h3>
+            <p>Let’s talk about ideas, projects, or just say hi!</p>
+            <a href="#contact" class="btn-contact">Say Hello →</a>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
