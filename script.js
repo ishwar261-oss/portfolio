@@ -307,7 +307,7 @@ scrollTo({top:0,behavior:'smooth'});
 typeEffect();
 typeSubtitle();
 
-// ULTRA PRO NAVBAR SCROLL
+
 const header = document.querySelector("header");
 window.addEventListener("scroll",()=>{
 if(window.scrollY>50){
